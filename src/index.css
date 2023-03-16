@@ -1,3 +1,55 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/static/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    h1,h2,h3,h4{
+        @apply text-very-dark-blue;
+        font-weight: 700;
+    }
+
+    body{
+        font-size: 0.938rem;
+        line-height: 1.5;
+        @apply text-dark-grayish-blue;
+        @apply bg-off-white;
+    }
+
+    .btn{
+        @apply bg-soft-red;
+        padding: 15px 30px;
+        @apply text-off-white;
+        line-height: 1.2;
+        letter-spacing: 0.25rem;
+        @apply uppercase;
+        font-weight: 700;
+        @apply inline-block;
+        @apply transition-colors;
+    }
+
+    .btn:hover{
+        @apply bg-very-dark-blue;
+    }
+}
+
