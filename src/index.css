@@ -66,3 +66,9 @@
     }
 }
 
+.menu-wrap.active{
+    @apply w-3/4;
+    @apply visible;
+    background-color: #fff;
+}
+
