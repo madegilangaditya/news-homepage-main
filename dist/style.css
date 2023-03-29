@@ -871,6 +871,16 @@ body{
   background-color: hsl(240deg 100% 5% / 60%);
 }
 
+.hover\:text-soft-red:hover {
+  --tw-text-opacity: 1;
+  color: hsl(5 85% 63% / var(--tw-text-opacity));
+}
+
+.hover\:text-soft-orange:hover {
+  --tw-text-opacity: 1;
+  color: hsl(35 77% 62% / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px) {
   .lg\:visible {
     visibility: visible;
