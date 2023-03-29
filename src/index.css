@@ -47,6 +47,7 @@
     .container{
         @apply mx-auto;
         @apply px-4;
+        max-width:1142px !important;
     }
 
     .btn{

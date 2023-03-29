@@ -479,6 +479,7 @@ body{
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  max-width:1142px !important;
 }
 
 .btn {
@@ -650,6 +651,10 @@ body{
   z-index: -10;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -751,6 +756,10 @@ body{
   justify-content: space-between;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .gap-9 {
   gap: 2.25rem;
 }
@@ -799,6 +808,11 @@ body{
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-\[25px\] {
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .pb-20 {
@@ -871,14 +885,14 @@ body{
   background-color: hsl(240deg 100% 5% / 60%);
 }
 
-.hover\:text-soft-red:hover {
-  --tw-text-opacity: 1;
-  color: hsl(5 85% 63% / var(--tw-text-opacity));
-}
-
 .hover\:text-soft-orange:hover {
   --tw-text-opacity: 1;
   color: hsl(35 77% 62% / var(--tw-text-opacity));
+}
+
+.hover\:text-soft-red:hover {
+  --tw-text-opacity: 1;
+  color: hsl(5 85% 63% / var(--tw-text-opacity));
 }
 
 @media (min-width: 1024px) {
@@ -888,6 +902,18 @@ body{
 
   .lg\:relative {
     position: relative;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
+  .lg\:mb-10 {
+    margin-bottom: 2.5rem;
+  }
+
+  .lg\:mb-\[72px\] {
+    margin-bottom: 72px;
   }
 
   .lg\:block {
@@ -906,6 +932,10 @@ body{
     width: auto;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -918,12 +948,29 @@ body{
     align-items: center;
   }
 
+  .lg\:gap-\[30px\] {
+    gap: 30px;
+  }
+
   .lg\:p-0 {
     padding: 0px;
+  }
+
+  .lg\:pb-\[21px\] {
+    padding-bottom: 21px;
+  }
+
+  .lg\:text-\[62px\] {
+    font-size: 62px;
   }
 
   .lg\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
